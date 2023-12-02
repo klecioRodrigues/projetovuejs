@@ -4,9 +4,9 @@ const myApp = {
         return{
             produtos :[
                 {
-                img : 'img/product-6.jpg',
-                descricao : 'Notebook',
-                valor : 20
+                img:'img/racao2.webp',
+                descricao : 'saborosa',
+                valor : 89
                 },
                 {
                     img : 'img/product-5.jpg',
@@ -23,6 +23,21 @@ const myApp = {
                     descricao : 'Smartphone',
                     valor : 30
                 },
+                {
+                    img : 'img/product-6.jpg',
+                    descricao : 'Notebook',
+                    valor : 20
+                    },
+                    {
+                        img : 'img/product-6.jpg',
+                        descricao : 'Notebook',
+                        valor : 20
+                        },
+                        {
+                            img : 'img/product-6.jpg',
+                            descricao : 'Notebook',
+                            valor : 20
+                            },
         ],
         carrinho: [],
         };

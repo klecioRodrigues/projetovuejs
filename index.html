@@ -56,6 +56,14 @@
                         <a href="cart.html">Carrinho - <span class="cart-amunt"> {{totalCarrinho()}}</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">{{ carrinho.length }}</span></a>
                     </div>
                 </div>
+                <div v-for="(produto,index) in produtos" :key="index">
+                                
+                    <produto-venda 
+                    :produto="produto"
+                    @add-prod-cart="addCart"
+                    ></produto-venda>
+
+                    </div>
             </div>
         </div>
     </div> <!-- End site branding area -->
@@ -267,15 +275,71 @@
                                 <ins>R$150</ins> <del>R$190,00</del>
                             </div>                            
                         </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/7896029091944-product-image-1.avif" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">whiskas </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$210</ins> <del>R$250,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/423327.jpg" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Chanin </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$155,00</ins> <del>R$160,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/saborosa_dog_25_kg.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Saborosa  </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$89,00</ins> <del>R$100,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/3051272541_1.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Goden</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$65,00</ins> <del>R$70,00</del>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-product-widget">
                         <h2 class="product-wid-title">Acessorios</h2>
-                        <a href="#" class="wid-view-more">View All</a>
+                        <a href="#" class="wid-view-more">Novidades</a>
                         <div class="single-wid-product">
-                            <a href="single-product.html"><img src="" alt="" class="product-thumb"></a>
-                            <h2><a href="single-product.html">Sony playstation microsoft</a></h2>
+                            <a href="single-product.html"><img src="./img/download (1).jpg" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Coloiras</a></h2>
                             <div class="product-wid-rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -284,12 +348,12 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+                                <ins>R$ 15,00</ins> <del>R$ 20,00</del>
                             </div>                            
                         </div>
                         <div class="single-wid-product">
-                            <a href="single-product.html"><img src="img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="single-product.html">Sony Smart Air Condtion</a></h2>
+                            <a href="single-product.html"><img src="./img/pelucia_polvo_feliz_cinza_home_pet_691_1_6414f613868c2e806cde6395dc98db14.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Pouvo de pelucia </a></h2>
                             <div class="product-wid-rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -298,12 +362,12 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+                                <ins>R$30,00</ins> <del>R$35,00</del>
                             </div>                            
                         </div>
                         <div class="single-wid-product">
-                            <a href="single-product.html"><img src="img/product-thumb-2.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="single-product.html">Samsung gallaxy note 4</a></h2>
+                            <a href="single-product.html"><img src="./img/Brinquedo-Bolinha-Cravinho-LCM-Vermelho.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Bola de brinquedo </a></h2>
                             <div class="product-wid-rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -312,18 +376,88 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+                                <ins>R$3,50</ins> <del>R$5,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/casinha-cachorro-recicl-vel-chal--m-dio-porte-e-border-collie-ecopetlar-dhdidy804u.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Casa  </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$40,00</ins> <del>R$45,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/download (2).jpg" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Osso de brinquedo  </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$7,00</ins> <del>R$15,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/cama_de_cachorro_europa_nylon_rosa_malhado_53_1_20190620140912.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Caminha </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$20,00</ins> <del>R$25,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/download (3).jpg" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Escova de pelos  </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$10,00</ins> <del>R$15,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/download (4).jpg" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Arraiador para gatos  </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$45,00</ins> <del>R$50,00</del>
                             </div>                            
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-product-widget">
-                        <h2 class="product-wid-title">Novidades</h2>
-                        <a href="#" class="wid-view-more">View All</a>
+                        <h2 class="product-wid-title">Medicamentos</h2>
+                        <a href="#" class="wid-view-more">Novidades</a>
                         <div class="single-wid-product">
-                            <a href="single-product.html"><img src="img/product-thumb-3.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="single-product.html">Apple new i phone 6</a></h2>
+                            <a href="single-product.html"><img src="./img/2660303841_1.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Frontline spray</a></h2>
                             <div class="product-wid-rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -332,12 +466,12 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+                                <ins>R$25,00</ins> <del>R$40.00</del>
                             </div>                            
                         </div>
                         <div class="single-wid-product">
-                            <a href="single-product.html"><img src="img/product-thumb-4.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="single-product.html">Samsung gallaxy note 4</a></h2>
+                            <a href="single-product.html"><img src="./img/antitoxico_bravet_mercepton_oral_20ml_para_caes_e_gatos_1009_1_77db0958f72cf260a58a00e9422d105e.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Mercepton</a></h2>
                             <div class="product-wid-rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -346,12 +480,12 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+                                <ins>R$35,00</ins> <del>R$45,00</del>
                             </div>                            
                         </div>
                         <div class="single-wid-product">
-                            <a href="single-product.html"><img src="img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="single-product.html">Sony playstation microsoft</a></h2>
+                            <a href="single-product.html"><img src="./img/CAES.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Natu verm </a></h2>
                             <div class="product-wid-rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -360,7 +494,77 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+                                <ins>R$15,00</ins> <del>R$20,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/Dexagard.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Dexargard </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$45,00</ins> <del>50,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/download(5).jpg" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Primociclin </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$25,00</ins> <del>R$30,00s</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/download (6).jpg" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Vetmax plus  </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$45,00</ins> <del>R$50,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/f6a18e2ffe.webp" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Genial pet Shampoo </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$15,00</ins> <del>R$20,00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="./img/images.jpg" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Coleira TA 237 anti-pulgas  </a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>R$17,00</ins> <del>R$20,00</del>
                             </div>                            
                         </div>
                     </div>
