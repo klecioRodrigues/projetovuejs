@@ -79,13 +79,13 @@ div.cart-collaterals ul.products li.product {
 }    
     
 .navbar-toggle {
-    border-color: #fff;
+    border-color: #ffffff;
     float: none;
     margin: 10px auto;
 }
 .navbar-toggle .icon-bar { background: none repeat scroll 0 0 #333 }  
 .navbar-collapse.collapse.in {
-  background: none repeat scroll 0 0 #f4f4f4;
+  background: none repeat scroll 0 0 #ffffff;
   position: relative;
   z-index: 99;
 } 
@@ -204,4 +204,11 @@ div.coupon input[type="text"] {
     
   
     
+}
+.slide-area{
+
+width: 50%;
+height: 50%;
+padding: auto;;
+
 }

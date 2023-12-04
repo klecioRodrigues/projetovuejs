@@ -4,39 +4,39 @@ const myApp = {
         return{
             produtos :[
                 {
-                img:'img/racao2.webp',
-                descricao : 'saborosa',
-                valor : 89
+                img:'img/racao1.webp',
+                descricao : 'magnus',
+                valor : 80
                 },
                 {
-                    img : 'img/product-5.jpg',
-                    descricao : 'Mouse',
-                    valor : 50
+                    img : 'img/racao2.webp',
+                    descricao : 'saborosa',
+                    valor : 89
                 },
                 {
-                    img : 'img/product-4.jpg',
-                    descricao : 'Teclado',
-                    valor : 100
+                    img : 'img/racao4.webp',
+                    descricao : 'Gran plus',
+                    valor : 150
                 },
                 {
-                    img : 'img/product-3.jpg',
-                    descricao : 'Smartphone',
-                    valor : 30
+                    img : 'img/rede3.webp',
+                    descricao : 'Frontline Spray',
+                    valor : 25
                 },
                 {
-                    img : 'img/product-6.jpg',
-                    descricao : 'Notebook',
+                    img : 'img/CAES.WEBP',
+                    descricao : 'NATUN VERM',
                     valor : 20
                     },
                     {
-                        img : 'img/product-6.jpg',
-                        descricao : 'Notebook',
-                        valor : 20
+                        img : 'img/med4.webp',
+                        descricao : 'Mercepton Oral',
+                        valor : 35
                         },
                         {
-                            img : 'img/product-6.jpg',
-                            descricao : 'Notebook',
-                            valor : 20
+                            img : 'img/423327.jpg',
+                            descricao : 'chanin',
+                            valor : 155
                             },
         ],
         carrinho: [],
